@@ -1,0 +1,8 @@
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button [disabled]="!activarAnterior" type="button" class="btn btn-primary" (click)="volver()" *ngIf="mostrarVolver">
+  	<fa-icon [icon]="faArrowLeft"></fa-icon>
+  </button>
+  <button [disabled]="!activarSiguiente" type="button" class="btn btn-primary" (click)="siguiente()" *ngIf="mostrarSiguiente">
+  	<fa-icon [icon]="faArrowRight"></fa-icon>
+  </button>
+</div>

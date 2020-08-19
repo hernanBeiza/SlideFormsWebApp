@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 m-4">
+      <h2>
+        Maqueta navegación formulario
+      </h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <app-indicador-etapa></app-indicador-etapa>
+    </div>
+    <div class="col-12">
+	    <main [@routerTransition]="prepareRoute(o)">
+	      <router-outlet #o="outlet"></router-outlet>
+  	  </main>
+      <!--
+      <div [@routerTransition]="getState(o)">
+        <router-outlet #outlet="outlet"></router-outlet>
+      </div>
+      -->
+    </div>
+  </div>
+</div>

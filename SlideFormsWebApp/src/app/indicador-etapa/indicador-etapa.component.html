@@ -1,0 +1,30 @@
+<div class="stepwizard">
+  <div class="stepwizard-row setup-panel">
+    <div class="stepwizard-step col-xs-2" *ngFor="let etapa of etapas">
+      <a type="button" class="numero btn btn-circle" [ngClass]="etapa.actual ? 'paso-actual' : 'paso-normal'">{{etapa.id}}</a>
+      <p><small>{{etapa.id}}. <span class="visible-md-block visible-lg-block">{{etapa.nombre}}</span></small></p>
+    </div>
+    <!--
+    <div class="stepwizard-step col-xs-2"> 
+      <a type="button" class="numero btn paso-default btn-circle">2</a>
+      <p><small>Paso 2 <span class="visible-md-block visible-lg-block">Preguntas</span></small></p>
+    </div>
+    <div class="stepwizard-step col-xs-2"> 
+      <a type="button" class="numero btn paso-default btn-circle">3</a>
+      <p><small>Paso 3 <span class="visible-md-block visible-lg-block">Más Preguntas</span></small></p>
+    </div>
+    <div class="stepwizard-step col-xs-2"> 
+      <a type="button" class="numero btn paso-default btn-circle">4</a>
+      <p><small>Paso 4 <span class="visible-md-block visible-lg-block">Otra pregunta</span></small></p>
+    </div>
+    <div class="stepwizard-step col-xs-2"> 
+      <a type="button" class="numero btn paso-default btn-circle">5</a>
+      <p><small>Paso 5 <span class="visible-md-block visible-lg-block">Otra pregunta más</span></small></p>
+    </div>
+    <div class="stepwizard-step col-xs-2"> 
+      <a type="button" class="numero btn paso-default btn-circle">6</a>
+      <p><small>Paso 6 <span class="visible-md-block visible-lg-block">Gracias</span></small></p>
+    </div>
+    -->
+  </div>
+</div>
